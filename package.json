@@ -8,11 +8,15 @@
     "start": "next start",
     "lint": "next lint",
     "check-format": "prettier --check \"**/*.{ts,tsx,js,jsx,css}\"",
-    "format": "prettier --write \"**/*.{ts,tsx,js,jsx,css}\""
+    "format": "prettier --write \"**/*.{ts,tsx,js,jsx,css}\"",
+    "db:push": "prisma push",
+    "db:generate": "prisma generate",
+    "db:studio": "prisma studio"
   },
   "dependencies": {
     "@clerk/nextjs": "^4.29.9",
     "@clerk/themes": "^1.7.10",
+    "@prisma/client": "^5.11.0",
     "@radix-ui/react-slot": "^1.0.2",
     "class-variance-authority": "^0.7.0",
     "clsx": "^2.1.0",
@@ -34,6 +38,7 @@
     "postcss": "^8",
     "prettier": "^3.2.5",
     "prettier-plugin-tailwindcss": "^0.5.12",
+    "prisma": "^5.11.0",
     "tailwindcss": "^3.3.0",
     "typescript": "^5"
   }
